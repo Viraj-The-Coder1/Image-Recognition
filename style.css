@@ -1,0 +1,19 @@
+.IR{
+    width: 80%;
+    font-size: 20px;
+
+}
+body{
+    background-color: rgb(180, 204, 204);
+    color: firebrick;
+}
+#camera{
+    border:2px ridge green;
+    width: 350px;
+    height: 250px;
+}
+.buttons{
+    background: linear-gradient(to right, #03fcc2, #8403fc);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}

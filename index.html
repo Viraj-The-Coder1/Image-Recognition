@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>
+        Image Rocognition TM
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1 class="btn btn-default IR">
+                Image Recognition
+            </h1>
+            <br>
+            <br>
+            <p style="font-size: 20px;">
+                Modal is trained to identify the following objects.
+            </p>
+            <b>
+                Headphones
+                <hr>
+                Tissue Paper
+                <hr>
+                Glass
+                <hr>
+                Scissors
+                <hr>
+            </b>
+            <label style="font-size: 20px;">
+                Webcam-
+            </label>
+            <div id="camera">
+            </div>
+            <br>
+            <br>
+            <div id="display-cam">
+            </div>
+            <br>
+            <button onclick="capture()" class="buttons">
+                Capture Img
+            </button>
+            <br>
+            <br>
+            <button onclick="identify()" class="buttons">
+                Identify Img
+            </button>
+            <br>
+            <br>
+            <p>
+                Object: <span id="object"></span>
+            </p>
+            <p>
+                Accuracy: <span id="accuracy"></span>
+            </p>
+        </center>
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
